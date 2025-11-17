@@ -609,6 +609,7 @@ img {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   width: 80%;
+  max-width: 80%;
   min-height: 584px;
   max-width: 408px;
   overflow-y: auto;
@@ -621,6 +622,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  outline: none;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -686,7 +688,7 @@ img {
   font-family: inherit;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
   width: 100%;
   background-color: transparent;
   height: 40px;
@@ -719,13 +721,14 @@ img {
   height: 120px;
   resize: none;
   outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 16px;
   margin-bottom: 8px;
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--navy-blue);
+  color: var(--navy-blue-modal);
+  background-color: transparent;
 }
 
 .modal-form-textarea::placeholder {
@@ -741,22 +744,32 @@ img {
   border-color: var(--iris);
 }
 
+.modal-checkbox-container {
+  margin-bottom: 24px;
+}
+
 .modal-checkbox-label {
   display: flex;
   margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
 }
 
 .custom-checkbox {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 16px;
+  fill: transparent;
   height: 16px;
   border-radius: 2px;
   border: 1px solid var(--navy-blue-modal);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-modal-checkbox {
