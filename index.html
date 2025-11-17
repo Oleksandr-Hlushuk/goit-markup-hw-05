@@ -493,6 +493,9 @@
             </label>
             <button class="footer-subscribe-button" type="submit">
               Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-footer-subscribe"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -502,44 +505,65 @@
     <div class="modal-overlay is-open">
       <div class="modal">
         <form class="modal-form" name="user-contacts-form">
+          <button class="close-modal-button" type="button">
+            <svg class="icon-modal-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
+          </button>
           <p class="modal-form-title">
             Leave your contacts and we will call you back
           </p>
           <label class="modal-form-label">
-            <span class="modal-label-text">Name</span>
+            <p class="modal-label-text">Name</p>
             <input
               class="modal-form-input"
               type="text"
               name="user-name"
               autofocus
+              required
             />
           </label>
 
           <label class="modal-form-label">
-            <span class="modal-label-text">Phone</span>
-            <input class="modal-form-input" type="text" name="user-phone" />
+            <p class="modal-label-text">Phone</p>
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-phone"
+              required
+            />
           </label>
 
           <label class="modal-form-label">
-            <span class="modal-label-text">Email</span>
-            <input class="modal-form-input" type="text" name="user-email" />
+            <p class="modal-label-text">Email</p>
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+              required
+            />
           </label>
 
           <label class="modal-form-label">
-            <span class="modal-label-text">Comment</span>
+            <p class="modal-label-text">Comment</p>
             <textarea
               class="modal-form-textarea"
               rows="7"
               name="user-comment"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </label>
 
-          <label>
-            <input type="checkbox" name="privacy-policy" />
+          <label class="modal-checkbox-label">
+            <input
+              type="checkbox"
+              name="privacy-policy"
+              value="agree"
+              required
+            />
             <p class="privacy-policy-text">
-              I accept the terms and conditions of the Privacy Policy
+              I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy Policy</a>
             </p>
           </label>
 
