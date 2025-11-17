@@ -520,6 +520,7 @@ img {
 
 .footer-subscribe-form {
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-form-input {
@@ -529,8 +530,7 @@ img {
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: var(--navy-blue);
-  margin-right: 24px;
+  background-color: transparent;
   font-family: var(--main-family);
   font-size: 12px;
   line-height: 2;
@@ -558,10 +558,9 @@ img {
   letter-spacing: 0.04em;
   color: var(--white);
   background-color: var(--iris);
-  text-align: center;
+  align-items: center;
   display: flex;
   justify-content: center;
-  gap: 16px;
   padding: 8px 24px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -572,6 +571,7 @@ img {
 }
 
 .footer-subscribe-icon {
+  margin-left: 16px;
   fill: var(--white);
 }
 
