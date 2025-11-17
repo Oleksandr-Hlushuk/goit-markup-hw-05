@@ -778,7 +778,8 @@ img {
 
 .policy-checkbox:checked + .modal-checkbox-label > .custom-checkbox {
   background-color: var(--ocean);
-  border: 1px solid var(--ocean);
+  border: none;
+  fill: var(--cloud);
 }
 
 .policy-checkbox:checked
