@@ -475,9 +475,11 @@ img {
 
 .footer-social-media {
   display: inline-block;
+  margin-right: 80px;
 }
 
-.footer-social-title {
+.footer-social-title,
+.footer-subscribe-title {
   font-family: var(--main-family);
   font-weight: 500;
   font-size: 16px;
@@ -510,6 +512,52 @@ img {
 
 .footer-info-icon {
   fill: var(--cloud);
+}
+
+.footer-subscribe-subscribe {
+  display: inline-block;
+}
+
+.footer-subscribe-form {
+  display: flex;
+}
+
+.subscribe-form-input {
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--navy-blue);
+  margin-right: 24px;
+}
+
+.subscribe-form-input::placeholder {
+  font-family: var(--main-family);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  padding: 8px 16px;
+}
+
+.footer-subscribe-button {
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background-color: var(--iris);
+  padding: 8px 24px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay {
@@ -576,17 +624,15 @@ img {
   resize: none;
 }
 
+.modal-form-textarea::placeholder {
+  font-family: inherit;
+  font-size: 12px;
+  color: var(--navy-blue-modal);
+}
+
 .modal-form-input:focus-within,
 .modal-form-textarea:focus-within {
   border: 1px solid var(--iris);
-}
-
-.modal-form-textarea::placeholder {
-  font-family: var(--main-family);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--navy-blue-modal);
 }
 
 .modal-form-button {
@@ -610,6 +656,8 @@ img {
 }
 
 .modal-form-button:hover,
-.modal-form-button:focus {
+.modal-form-button:focus,
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
   background-color: var(--ocean);
 }
