@@ -561,9 +561,6 @@ img {
   color: var(--light-slate);
 }
 
-.modal-label-text {
-}
-
 .modal-form-input {
   font-family: inherit;
   border: 1px solid var(--navy-blue-modal);
