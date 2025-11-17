@@ -575,7 +575,7 @@ img {
   fill: var(--white);
 }
 
-.modal-overlay {
+.modal-window-overlay {
   background-color: var(--navy-blue-modal);
   position: fixed;
   top: 0;
@@ -592,11 +592,9 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay.is-open {
+.modal-window-overlay .is-open {
   opacity: 1;
   pointer-events: auto;
-  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
