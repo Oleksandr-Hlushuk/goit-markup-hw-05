@@ -499,9 +499,12 @@
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
-        <form class="modal-form" name="user_contacts_form" autocomplete="off">
+        <form class="modal-form" name="user-contacts-form">
+          <p class="modal-form-title">
+            Leave your contacts and we will call you back
+          </p>
           <label class="modal-form-label">
             <span class="modal-label-text">Name</span>
             <input
@@ -531,6 +534,13 @@
               placeholder="Text input"
             >
             </textarea>
+          </label>
+
+          <label>
+            <input type="checkbox" name="privacy-policy" />
+            <p class="privacy-policy-text">
+              I accept the terms and conditions of the Privacy Policy
+            </p>
           </label>
 
           <button class="modal-form-button" type="submit">Send</button>

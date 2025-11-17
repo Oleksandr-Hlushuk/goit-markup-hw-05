@@ -599,6 +599,15 @@ img {
   padding: 4px;
 }
 
+.modal-form-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
 .modal-form-label {
   display: flex;
   flex-direction: column;
@@ -633,6 +642,14 @@ img {
 .modal-form-input:focus-within,
 .modal-form-textarea:focus-within {
   border: 1px solid var(--iris);
+}
+
+.privacy-policy-text {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
 }
 
 .modal-form-button {
